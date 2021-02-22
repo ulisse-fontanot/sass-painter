@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 70vh;
+}
+header .top {
+  background-color: black;
+  color: #e8e8e8;
+  padding: 20px 0;
+}
+header .top ul.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .top ul.container li {
+  padding: 0 10px;
+}
+header .top ul.container li i {
+  color: blue;
+  padding: 0 10px;
+}
+header .bottom {
+  background-color: black;
+  color: #e8e8e8;
+  padding: 20px 0;
+}
+header .bottom ul.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .bottom ul.container li {
+  padding: 0 10px;
+  font-size: 25px;
+}
+header .jumbo {
+  background-color: #f0ef84;
+  padding: 20px 0;
+}
+header .jumbo div {
+  display: flex;
+  flex-direction: column;
+}
+header .jumbo div .jumbo-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: 50px;
+  padding: 20px 0;
+}
+header .jumbo div .jumbo-viola {
+  color: #ca41eb;
+  padding: 20px 0;
+  font-size: 20px;
+}
+header .jumbo div .jumbo-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 30px;
+}
+header .jumbo div .jumbo-button .button-left {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+}
+header .jumbo div .jumbo-button .button-right {
+  padding: 10px 20px;
+  background-color: #f0ef84;
+  color: black;
+  border: 3px solid black;
+  margin: 0 10px;
+}

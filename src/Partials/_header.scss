@@ -1,0 +1,68 @@
+header{
+  @include width_100;
+  height: 70vh;
+  .top{
+    background-color: $black;
+    color: $grigino;
+    @include p_tb_20;
+    ul.container{
+      @include row-right;
+      li{
+        @include p_lr_10;
+        i{
+          color: blue;
+          @include p_lr_10;
+        }
+      }
+    }
+  }
+  .bottom{
+    background-color: $black;
+    color: $grigino;
+    @include p_tb_20;
+    ul.container{
+      @include row-left;
+      li{
+        @include p_lr_10;
+        font-size: 25px;
+      }
+    }
+  }
+  .jumbo{
+    background-color: rgb(240, 239, 132);
+    @include p_tb_20;
+    div{
+      display: flex;
+      flex-direction: column;
+      .jumbo-top{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        font-size: 50px;
+        @include p_tb_20;
+      }
+      .jumbo-viola{
+        color: rgb(202, 65, 235);
+        @include p_tb_20;
+        font-size: 20px;
+      }
+      .jumbo-button{
+        @include row-left;
+        font-size: 30px;
+        .button-left{
+          @include button;
+          background-color: $black;
+          color: $white;
+          border: 3px solid $black;
+        }
+        .button-right{
+          @include button;
+          background-color: rgb(240, 239, 132);
+          color: $black;
+          border: 3px solid $black;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
