@@ -1,0 +1,21 @@
+main{
+  @include p_tb_20;
+  background-color: $grigino;
+  text-align: center;
+    .main-top{
+      @include p_tb_20;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div{
+        width: 30%;
+        background-color: $white;
+        img{
+          @include width_100;
+        }
+        h2 em{
+          color: lightblue;
+        }
+      }
+    }
+}

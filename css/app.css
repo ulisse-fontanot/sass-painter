@@ -15,7 +15,6 @@ ul li {
 
 header {
   width: 100%;
-  height: 70vh;
 }
 header .top {
   background-color: black;
@@ -89,4 +88,88 @@ header .jumbo div .jumbo-button .button-right {
   color: black;
   border: 3px solid black;
   margin: 0 10px;
+}
+
+main {
+  padding: 20px 0;
+  background-color: #e8e8e8;
+  text-align: center;
+}
+main .main-top {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .main-top div {
+  width: 30%;
+  background-color: white;
+}
+main .main-top div img {
+  width: 100%;
+}
+main .main-top div h2 em {
+  color: lightblue;
+}
+
+footer {
+  background-color: #e8e8e8;
+}
+footer .footer-top .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+footer .footer-top .container ul {
+  width: 25%;
+  padding: 10px;
+}
+footer .footer-top .container ul li:first-of-type {
+  font-weight: bold;
+  padding: 5px;
+}
+footer .footer-top .container ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .footer-top .container .social {
+  width: 100%;
+}
+footer .footer-top .container .social ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer .footer-top .container .social ul li i {
+  padding: 0 10px;
+  font-size: 30px;
+}
+footer .footer-top .container .social ul .fa-facebook-square {
+  color: blue;
+}
+footer .footer-top .container .social ul .fa-instagram-square {
+  color: violet;
+}
+footer .footer-top .container .social ul .fa-youtube {
+  color: red;
+}
+footer .footer-top .container .social ul .fa-twitter-square {
+  color: #0fb7d7;
+}
+footer .footer-bottom {
+  background-color: black;
+}
+footer .footer-bottom .container {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #e8e8e8;
+}
+footer .footer-bottom .container span {
+  padding: 0 10px;
 }
