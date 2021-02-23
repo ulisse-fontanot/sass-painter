@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 ul li {
@@ -48,6 +49,34 @@ header .bottom ul.container {
 header .bottom ul.container li {
   padding: 0 10px;
   font-size: 25px;
+  position: relative;
+}
+header .bottom ul.container li:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+header .bottom ul.container li:hover ul {
+  display: flex;
+}
+header .bottom ul.container li ul {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250%;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+header .bottom ul.container li ul li:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+  border-radius: 5px;
 }
 header .jumbo {
   background-color: #f0ef84;
@@ -82,6 +111,9 @@ header .jumbo div .jumbo-button .button-left {
   color: white;
   border: 3px solid black;
 }
+header .jumbo div .jumbo-button .button-left:hover {
+  cursor: pointer;
+}
 header .jumbo div .jumbo-button .button-right {
   padding: 10px 20px;
   background-color: #f0ef84;
@@ -89,10 +121,15 @@ header .jumbo div .jumbo-button .button-right {
   border: 3px solid black;
   margin: 0 10px;
 }
+header .jumbo div .jumbo-button .button-right:hover {
+  cursor: pointer;
+}
 
 main {
   padding: 20px 0;
   background-color: #e8e8e8;
+}
+main h1 {
   text-align: center;
 }
 main .main-top {
@@ -104,12 +141,63 @@ main .main-top {
 main .main-top div {
   width: 30%;
   background-color: white;
+  padding-bottom: 20px;
 }
 main .main-top div img {
   width: 100%;
 }
 main .main-top div h2 em {
   color: lightblue;
+}
+main .main-top div h2 {
+  padding: 20px;
+}
+main .main-top div p {
+  padding: 20px;
+}
+main .main-top div a {
+  padding: 20px;
+}
+main .main-bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main .main-bottom .box {
+  width: 50%;
+  height: 300px;
+}
+main .main-bottom .box-testo {
+  padding: 20px;
+  background-color: darkgrey;
+  color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .main-bottom .box-testo a {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+}
+main .main-bottom .box-testo a:hover {
+  cursor: pointer;
+}
+main .main-bottom .box-testo p {
+  padding: 20px 0;
+}
+main .main-bottom .box-testo:first-of-type {
+  background-color: #580a7c;
+}
+main .main-bottom .box-testo:nth-last-of-type(2) {
+  background-color: #1b63d6;
+}
+main .main-bottom .box-immagine {
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/wacom.png");
+  background-position: 50%;
+  background-size: 160%;
 }
 
 footer {

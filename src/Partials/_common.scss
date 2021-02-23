@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul li{
@@ -14,6 +15,10 @@ $black: black;
 $grigino: rgb(232,232,232);
 
 // SPAZI
+@mixin p_20 {
+  padding: 20px;
+}
+
 @mixin p_lr_10 {
   padding: 0 10px;
 }
@@ -58,4 +63,7 @@ $grigino: rgb(232,232,232);
 // BOTTONI
 @mixin button {
   padding: 10px 20px;
+  &:hover{
+    cursor: pointer;
+  }
 }

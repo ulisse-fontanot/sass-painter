@@ -24,6 +24,36 @@ header{
       li{
         @include p_lr_10;
         font-size: 25px;
+        position: relative;
+        &:hover{
+          background-color: white;
+          color: black;
+          cursor: pointer;
+          ul{
+            display: flex;
+          }
+        }
+        ul{
+          position: absolute;
+          top: 25px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 250%;
+          display: none;
+          flex-direction: column;
+          background-color: white;
+          color: black;
+          text-align: center;
+          padding: 10px;
+          border-radius: 5px;
+          li {
+            &:hover{
+              background-color: lightgrey;
+              cursor: pointer;
+              border-radius: 5px;
+            }
+          }
+        }
       }
     }
   }

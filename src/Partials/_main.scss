@@ -1,21 +1,71 @@
 main{
   @include p_tb_20;
   background-color: $grigino;
-  text-align: center;
-    .main-top{
-      @include p_tb_20;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      div{
-        width: 30%;
-        background-color: $white;
-        img{
-          @include width_100;
-        }
-        h2 em{
-          color: lightblue;
-        }
+  h1{
+    text-align: center;
+  }
+  .main-top{
+    @include p_tb_20;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div{
+      width: 30%;
+      background-color: $white;
+      padding-bottom: 20px;
+      img{
+        @include width_100;
+      }
+      h2 em{
+       color: lightblue;
+      }
+      h2{
+        @include p_20;
+      }
+      p{
+        @include p_20;
+      }
+      a{
+        @include p_20;
       }
     }
+  }
+  .main-bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include width_100;
+    .box{
+      width: 50%;
+      height: 300px;
+    }
+    .box-testo{
+      @include p_20;
+      background-color: darkgrey;
+      color: $grigino;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      a{
+        @include button;
+        background-color: $white;
+        color: black;
+      }
+      p{
+        @include p_tb_20;
+      }
+    }
+    .box-testo:first-of-type{
+      background-color: #580a7c;
+    }
+    .box-testo:nth-last-of-type(2){
+      background-color: rgb(27, 99, 214);
+    }
+    .box-immagine{
+      background-image: url("https://www.painterartist.com/static/ptr/images/home/wacom.png");
+      background-position: 50%;
+      background-size: 160%;
+    }
+  }
 }
